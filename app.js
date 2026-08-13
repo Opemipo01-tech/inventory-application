@@ -16,3 +16,6 @@ const PORT = 3000;
 app.listen(PORT, () => {
     console.log("Running");
 })
+
+const assetsPath = path.join(__dirname, "public");
+app.use(express.static(assetsPath));

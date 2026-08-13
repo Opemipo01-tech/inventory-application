@@ -1,0 +1,210 @@
+/* =========================
+   RESET & GLOBAL STYLES
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(900px, 100%);
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1 {
+    margin-bottom: 30px;
+    color: #1e293b;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CATEGORY & ITEM CARDS
+========================= */
+
+.category-card,
+.item-card {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover,
+.item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-card p,
+.item-card p {
+    margin: 8px 0;
+    color: #4b5563;
+}
+
+small {
+    display: block;
+    margin-top: 15px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   LINKS / ACTION BUTTONS
+========================= */
+
+a {
+    display: inline-block;
+    margin-top: 12px;
+    margin-right: 8px;
+    padding: 9px 14px;
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+a:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #374151;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    margin-top: 20px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #16a34a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #15803d;
+}
+
+
+/* =========================
+   DELETE BUTTONS
+========================= */
+
+.delete-form {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.delete-form button {
+    margin-top: 10px;
+    background: #dc2626;
+}
+
+.delete-form button:hover {
+    background: #b91c1c;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .category-card,
+    .item-card,
+    form {
+        padding: 18px;
+    }
+
+    a {
+        margin-right: 4px;
+    }
+}

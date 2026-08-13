@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+    <a href="/items/<%= categoryId %>/new-item">Add Item</a>
 
     <div class="container">
 
@@ -25,16 +27,17 @@
          
          <a href="/items/<%= item.id %>/update"> Edit Item </a>
 
-         <form action="/items/<%= item.id %>/delete" method="POST">
+         <form class="delete-form" action="/items/<%= item.id %>/delete" method="POST">
             <button type="submit">Delete Item</button>
          </form>
      <% }) %>
 
 
-     <a href="/items/<%= categoryId %>/new-item">Add Item</a>
+<div >
 
 
      <a href="/">Go Back</a>
+</div>
 
     </div>
     

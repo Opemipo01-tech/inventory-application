@@ -67,38 +67,3 @@ module.exports = {
 
 
 
-
-
-
-
-// 1. Design database ✅
-//         ↓
-// 2. Create categories table ✅
-//         ↓
-// 3. Create items table ✅
-//         ↓
-// 4. Connect Express → Neon✅
-//         ↓
-// 5. Seed initial data✅
-//         ↓
-// 6. GET categories✅
-//         ↓
-// 7. GET items belonging to a category✅
-//         ↓
-// 8. CREATE category ✅
-//         ↓
-// 9. UPDATE category ✅
-//         ↓
-// 10. DELETE category ✅
-//         ↓
-// 11. CREATE item ✅
-//         ↓
-// 12. UPDATE item ✅
-//         ↓
-// 13. DELETE item ✅
-//         ↓
-// 14. Add validation
-//         ↓
-// 15. Add error handling
-//         ↓
-// 16. Polish UI
