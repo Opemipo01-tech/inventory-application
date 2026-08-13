@@ -17,5 +17,14 @@
    <button type="submit">Submit</button>
 
     </form>
+
+    <% if (errors.length > 0) { %>
+    <ul>
+        <% errors.forEach((error) => { %>
+            <li><%= error.msg %></li>
+        <% }) %>
+    </ul>
+<% } %>
+
 </body>
 </html>

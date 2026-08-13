@@ -13,7 +13,9 @@ async function itemsListGet(req,res) {
 }
 
 async function createCategoryGet(req,res) {
-    res.render("createCategory")
+    res.render("createCategory",{
+        errors: [],
+    })
 }
 
 async function createCategoryPost(req,res) {
@@ -54,7 +56,7 @@ async function deleteCategoryPost(req,res) {
 async function createItemGet(req,res) {
       const categoryId = req.params.id;
 
-    res.render("createItem",{categoryId});
+    res.render("createItem",{categoryId , errors: []});
 }
 
 async function createItemPost(req,res) {
