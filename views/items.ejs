@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <% items.forEach((item) => { %>
+    
+         <div class="item-card">
+    
+             <h3>Item Name: <%= item.name %></h3>
+    
+             <p>Description:<%= item.description %></p>
+    
+             <p>Price: <%= item.price %></p>
+    
+             <p>Quantity: <%= item.quantity %></p>
+    
+         </div>
+         
+         <a href="/items/<%= item.id %>/update"> Edit Item </a>
+
+         <form action="/items/<%= item.id %>/delete" method="POST">
+            <button type="submit">Delete Item</button>
+         </form>
+     <% }) %>
+
+
+     <a href="/items/<%= categoryId %>/new-item">Add Item</a>
+
+
+     <a href="/">Go Back</a>
+
+    </div>
+    
+
+
+
+</body>
+</html>

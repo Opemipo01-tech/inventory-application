@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Item</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Create Item</h1>
+
+  <form action="/items/<%= categoryId %>/new-item" method="POST">
+
+    <label for="name">  Name:</label>
+    <input type="text" name="name" required>
+   
+    <label for="description">Description:</label>
+    <textarea name="description"></textarea>
+
+    <label for="price">Price:</label>
+    <input type="number" name="price" required>
+
+
+    <label for="quantity"> Quantity: </label>
+    <input type="number" name="quantity" required>
+
+    <button type="submit">Create Item</button>
+
+   </form>
+
+        </form>
+    </div>
+
+</body>
+</html>
